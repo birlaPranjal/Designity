@@ -1,27 +1,27 @@
 import designdemo from '@/../public/assets/designdemo.svg'
 const designify = {
-    faqs: {
-        faq1: {
+    faqs: [
+        {
             question: "What is the theme of the competition?",
             answer: "The theme of the competition is 'Future of Digital Interaction'. Participants are encouraged to design innovative and user-friendly interfaces that envision the future of digital experiences."
         },
-        faq2: {
+        {
             question: "Who can participate in the competition?",
             answer: "The competition is open to everyone, including students, professionals, and hobbyists. There are no restrictions on age or experience level."
         },
-        faq3: {
+        {
             question: "What tools can I use for my design?",
             answer: "Participants can use any design tools they are comfortable with, such as Adobe XD, Figma, Sketch, InVision, or any other software that helps in creating UI/UX designs."
         },
-        faq4: {
+        {
             question: "What are the judging criteria?",
             answer: "Designs will be judged based on creativity, usability, innovation, visual appeal, and how well they align with the competition theme. A panel of experienced UI/UX designers will evaluate the entries."
         },
-        faq5: {
+        {
             question: "What is the submission deadline?",
             answer: "The submission deadline for the competition is June 30, 2024. All entries must be submitted through the official competition portal by 11:59 PM (IST) on that date."
         }
-    },
+    ],
     content: {
         welcome: {
             title: "Welcome to Wittyhacks!",

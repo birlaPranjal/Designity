@@ -146,15 +146,15 @@ export default function Page() {
       <div className='mt-16 '>
         <div className='text-4xl font-mono sm:text-5xl lg:text:8xl w-[90vw]  mx-auto mb-5 text-center '>Frequently Asked Questions</div>
         <Accordion type="single" collapsible className="w-[95vw] sm:w-[60vw] mx-auto">
-        {Object.keys(designify.faqs).map((faqKey: keyof typeof designify.faqs, index) => (
+        {designify.faqs.map((faq, index) => (
           <AccordionItem key={index} value={`item-${index + 1}`}>
-          <AccordionTrigger>{designify.faqs[faqKey].question}</AccordionTrigger>
-          <AccordionContent>
-            {designify.faqs[faqKey].answer}
-          </AccordionContent>
+            <AccordionTrigger>{faq.question}</AccordionTrigger>
+            <AccordionContent>
+              {faq.answer}
+            </AccordionContent>
           </AccordionItem>
         ))}
-        </Accordion>
+      </Accordion>
       </div>
       </div>
       <div className="h-20"></div> 
