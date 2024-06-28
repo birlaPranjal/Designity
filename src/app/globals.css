@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #afb2bf;
+
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #F7FFF7;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #afb2bf;
+    border-radius: 10px;
+    visibility: hidden;
+  }
+  
+  *:active::-webkit-scrollbar-thumb,
+  *:focus::-webkit-scrollbar-thumb,
+  *:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+
+
+ .flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+ }
+
+ .tag-line-animate {
+  animation: animateIt 8s infinite; /* Adjust duration as needed */
+  animation-timing-function: steps(1.5, start);
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes animateIt {
+  0% {
+    transform: translateY(0);
+  }
+  16.66% {
+    transform: translateY(0);
+  }
+  33.33% {
+    transform: translateY(-33%);
+  }
+  50% {
+    transform: translateY(-33%);
+  }
+  66.66% {
+    transform: translateY(-66%);
+  }
+  83.33% {
+    transform: translateY(-66%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
