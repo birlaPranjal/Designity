@@ -17,12 +17,12 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="py-4 shadow-md h-[3.8rem] top-0 fixed w-screen z-50 bg-dark text-white">
+    <div className="py-4 shadow-md h-[3.8rem] top-0 fixed w-screen z-50 bg-dark text-white pt-5">
       <div className="w-10/12  mx-auto flex items-center justify-between">
       <Link href="/" className="w-10/12 mx-auto md:mx-0 md:w-[60%]">
-            <div className='text-2xl flex'><SiAltiumdesigner />Designity</div>
+            <div className='text-4xl  flex'><SiAltiumdesigner />Designity</div>
             </Link>
-        <nav className=" gap-5 hidden sm:flex sm:mr-[60px] ">
+        <nav className=" gap-5 hidden sm:flex sm:mr-[60px] text-xl ">
           {navLinks?.map((link) => (
             <li className="list-none" key={link.title}>
               <CustomLink href={link.path}>{link.title}</CustomLink>
